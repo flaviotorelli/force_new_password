@@ -18,3 +18,14 @@ function _force_new_password_role_matches($user) {
   return FALSE;
 
 }
+
+/**
+ * Helper function to verify if the user is the administrator.
+ */
+function _force_new_password_is_admin() {
+  global $user;
+  if ($user->uid == 1) {
+    return TRUE;
+  }
+  return FALSE;
+}
