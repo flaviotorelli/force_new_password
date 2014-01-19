@@ -14,7 +14,7 @@ function force_new_password_genaral_config($form, $form_state) {
   $form['force_new_password_disclaimer_message'] = array(
     '#type' => 'textarea',
     '#title' => t('Disclaimer message'),
-    '#default_value' => variable_get('force_new_password_disclaimer_message', t('You need to reset your password. For further information check your e-mail.')),
+    '#default_value' => variable_get('force_new_password_disclaimer_message', ''),
     '#required' => TRUE,
   );
 
