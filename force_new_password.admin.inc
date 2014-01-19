@@ -14,7 +14,7 @@ function force_new_password_genaral_config($form, $form_state) {
   $form['force_new_password_disclaimer_message'] = array(
     '#type' => 'textarea',
     '#title' => t('Disclaimer message'),
-    '#default_value' => variable_get('force_new_password_disclaimer_message', t('You need reset your password. For futher information check your e-mail inbox.')),
+    '#default_value' => variable_get('force_new_password_disclaimer_message', t('You need to reset your password. For further information check your e-mail.')),
     '#required' => TRUE,
   );
 
@@ -22,7 +22,7 @@ function force_new_password_genaral_config($form, $form_state) {
     '#type' => 'textfield',
     '#title' => t('Result page'),
     '#default_value' => variable_get('force_new_password_result_page', ''),
-    '#description' => t('The path of result page after the user change the password.<br />
+    '#description' => t('The path of result page to be showed after password change.<br />
     Leave empty to keep the regular Drupal flow.'),
   );
 
