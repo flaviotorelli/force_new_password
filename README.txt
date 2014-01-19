@@ -1,10 +1,4 @@
-Platform: Drupal 7.x
-Name: Force New Password
-Drupal: 7.x
-Author: Flávio Torelli
----------------------------------------------------------------------------------------------------------
-
-** When you should use this module **
+** Consider to use this module **
 
   - After migrate users with passwords that can't be imported in SHA1.
   - After change your password policy.
